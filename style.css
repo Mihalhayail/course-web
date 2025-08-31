@@ -14,12 +14,27 @@
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
 body {
   background-color: var(--secondary-color);
   font-size: 20px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  margin: 50px;
-  height: 150vh;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hamburger Menu */
@@ -204,6 +219,33 @@ span:nth-child(3).slide {
   box-shadow: 5px 5px 7px var(--shadow);
 }
 
+/* Footer Start */
+.bottom-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--text-color-1);
+}
+/* Footer End */
+
 /* Responsive Break Points */
 @media screen and (max-width: 1024px) {
   /* Nav */
@@ -337,5 +379,20 @@ span:nth-child(3).slide {
 
   .hero-text p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    justify-items: stretch;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .header-toggle {
+    top: 25px;
   }
 }
