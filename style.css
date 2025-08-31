@@ -81,6 +81,37 @@ span:nth-child(3).slide {
 
 /* Hamburger End */
 
+/* Button Start */
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+/* Button End */
+
 /* Nav Header */
 .header {
   background-color: var(--secondary-color);
@@ -91,7 +122,7 @@ span:nth-child(3).slide {
   left: 0;
   width: 100%;
   padding: 0.7rem 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   z-index: 1000;
 }
 
@@ -99,6 +130,7 @@ span:nth-child(3).slide {
   display: flex;
   cursor: pointer;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .logo img {
@@ -110,6 +142,11 @@ span:nth-child(3).slide {
   color: var(--primary-color);
   font-size: 2rem;
   margin-left: 2rem;
+}
+
+.header-auth {
+  justify-self: center;
+  align-content: center;
 }
 
 .header-list {
@@ -169,6 +206,7 @@ span:nth-child(3).slide {
 
 /* Responsive Break Points */
 @media screen and (max-width: 1024px) {
+  /* Nav */
   .header-list {
     display: inline;
   }
@@ -194,7 +232,7 @@ span:nth-child(3).slide {
     justify-content: space-evenly;
     align-items: center;
     transform: translateY(-100%);
-    z-index: 999;
+    z-index: 99;
     opacity: 0;
     transition: all 1s;
   }
@@ -203,6 +241,22 @@ span:nth-child(3).slide {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .header-auth {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 99;
+    position: absolute;
+    top: 10px;
+    transform: translate(0, -50%);
+  }
+
+  .header-auth.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Nav End */
 
   .hero-text h2 {
     font-size: 2.5rem;
@@ -218,7 +272,7 @@ span:nth-child(3).slide {
   body {
     margin: 15px;
   }
-
+  /* Nav Start */
   .header {
     order: -1;
     justify-items: end;
@@ -253,6 +307,22 @@ span:nth-child(3).slide {
     opacity: 1;
     transform: translateX(0);
   }
+
+  .header-auth {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 99;
+    position: absolute;
+    top: 10px;
+    transform: translate(0, -50%);
+  }
+
+  .header-auth.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Nav end */
 
   .hero-container {
     grid-template-columns: 1fr;
