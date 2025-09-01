@@ -2,6 +2,7 @@
   --primary-color: #d45428;
   --secondary-color: #fff8cc;
   --thirdty-color: #f4e9ad;
+  --gradient-color: linear-gradient(140deg, #d45428 25%, #b87012 95%);
   --text-color-1: #000;
   --text-color-2: #fff;
   --shadow: rgba(0, 0, 0, 0.7);
@@ -243,6 +244,32 @@ span:nth-child(3).slide {
   box-shadow: 5px 5px 7px var(--shadow);
 }
 
+/* Stat Start */
+.stat-section {
+  background-image: var(--gradient-color);
+  padding: 2rem 0;
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color-2);
+}
+
+.stat-box {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.stat-section .start {
+  border-right: 1px solid white;
+}
+/* Stat End */
+
 /* Prakata Start */
 
 .prakata {
@@ -259,6 +286,14 @@ span:nth-child(3).slide {
 .prakata .hero-text h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.fahmi .hero-image {
+  justify-self: start;
+}
+
+.fahmi .hero-text {
+  text-align: end;
 }
 /* Prakata End */
 
@@ -467,6 +502,23 @@ span:nth-child(3).slide {
     font-size: 1rem;
   }
 
+  /* Stat Start */
+  .stat-section {
+    padding: 1rem 0;
+  }
+
+  .stat-box {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  /* Stat End*/
+
+  /* Prakata Start */
   .prakata {
     grid-template-columns: 1fr;
     margin: 0 15px;
@@ -476,6 +528,10 @@ span:nth-child(3).slide {
     justify-self: center;
   }
 
+  .fahmi .hero-text {
+    text-align: start;
+  }
+  /* Prakata End */
   .bottom-container {
     margin: 2rem;
   }
@@ -502,6 +558,10 @@ span:nth-child(3).slide {
   }
 
   .hero-text {
+    text-align: center;
+  }
+
+  .fahmi .hero-text {
     text-align: center;
   }
 }
