@@ -53,7 +53,7 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "stat-student") {
-          animateCounter("stat-student", 10, 1229, 10, 5, { suffix: "+" });
+          animateCounter("stat-student", 10, 1700, 10, 5, { suffix: "+" });
         }
 
         if (entry.target.id === "stat-course") {
