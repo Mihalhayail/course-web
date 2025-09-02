@@ -302,6 +302,49 @@ span:nth-child(3).slide {
 }
 /* Prakata End */
 
+/* Program Start */
+.program-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem 70px;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.program-card {
+  box-shadow: 1px 1px 2px var(--shadow);
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.program-icon {
+  background-color: white;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.program-desc {
+  background-color: var(--primary-color);
+  border-radius: 0 0 10px 10px;
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.program-desc h4 {
+  color: var(--text-color-2);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.program-card p {
+  font-size: 0.8rem;
+}
+/* Program End */
+
 /* Footer Start */
 .bottom-container {
   display: grid;
