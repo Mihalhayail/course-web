@@ -363,6 +363,31 @@ h3.program-title {
 }
 /* Program End */
 
+/* Test Start */
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px;
+}
+.test-title {
+  text-align: center;
+}
+
+.test-title h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.test-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin: 50px 100px;
+}
+/* Test End */
+
 /* Footer Start */
 .bottom-container {
   display: grid;
@@ -630,6 +655,18 @@ h3.program-title {
     margin: 2rem;
   }
   /* Program End */
+
+  /* Test Start */
+  .test-container {
+    justify-items: center;
+  }
+
+  .test-gallery {
+    justify-content: center;
+    margin: 15px;
+    margin-top: 2rem;
+  }
+  /* Test End */
 
   /* Footer Start */
   .bottom-container {
