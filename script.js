@@ -57,7 +57,7 @@ const observer = new IntersectionObserver(
         }
 
         if (entry.target.id === "stat-course") {
-          animateCounter("stat-course", 1, 10, 1, 200, { suffix: " Online" });
+          animateCounter("stat-course", 1, 10, 1, 100, { suffix: " Online" });
         }
       }
     });

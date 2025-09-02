@@ -15,6 +15,11 @@
   list-style: none;
 }
 
+::selection {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 h1,
 h2,
 h3,
