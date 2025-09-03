@@ -783,10 +783,12 @@ h3.bundling {
   /* Kelas Start */
   .kelas-top {
     margin: 100px 15px;
+    text-align: center;
   }
 
   .kelas-top h2 {
     font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .kelas-container {
