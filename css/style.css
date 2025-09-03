@@ -204,10 +204,6 @@ span:nth-child(3).slide {
   font-weight: 600;
 }
 
-.header-list li a:active {
-  font-size: 1rem;
-  color: var(--primary-color);
-}
 /* Nav End */
 
 /* Hero Start */
@@ -388,6 +384,70 @@ h3.program-title {
 }
 /* Test End */
 
+/* Kelas Start */
+.kelas-top {
+  margin: 100px;
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+
+.kelas-top h2 {
+  font-size: 2rem;
+}
+
+.kelas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 100px;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.kelas-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px var(--shadow);
+}
+
+.kelas-card img {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.kelas-title {
+  padding: 1rem 2rem;
+}
+
+.kelas-title h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.kelas-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kelas-bottom p {
+  font-size: 1rem;
+}
+
+.kelas-bottom a {
+  border-width: 1px;
+}
+.kelas-bottom a:hover {
+  border-width: 1px;
+}
+
+h3.bundling {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px;
+}
+/* Kelas End */
+
 /* Footer Start */
 .bottom-container {
   display: grid;
@@ -539,6 +599,13 @@ h3.program-title {
   }
   /* Program End */
 
+  /* Kelas Start */
+
+  .kelas-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Kelas End */
+
   /* Footer Start */
   .bottom-container {
     grid-template-columns: 1fr;
@@ -667,6 +734,33 @@ h3.program-title {
     margin-top: 2rem;
   }
   /* Test End */
+
+  /* Kelas Start */
+  .kelas-top {
+    text-align: center;
+  }
+
+  .kelas-container {
+    margin: 15px;
+  }
+  /* Kelas End */
+
+  /* Kelas Start */
+  .kelas-top {
+    margin: 100px 15px;
+  }
+
+  .kelas-top h2 {
+    font-size: 1.8rem;
+  }
+
+  .kelas-container {
+    grid-template-columns: 1fr;
+  }
+  h3.bundling {
+    text-align: center;
+  }
+  /* Kelas End */
 
   /* Footer Start */
   .bottom-container {
