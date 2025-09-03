@@ -446,6 +446,51 @@ h3.bundling {
   text-align: center;
   margin: 50px;
 }
+
+/* Benefit Start */
+.benefit-section h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefit-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px 16px;
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.benefit-item {
+  display: flex;
+  gap: 12px;
+}
+.icon {
+  flex-shrink: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-top: 4px;
+  width: 24px;
+  height: 24px;
+}
+.text {
+  flex: 1;
+}
+.text strong {
+  font-weight: 700;
+  font-size: 15px;
+  color: #3f4a44;
+}
+.text p {
+  margin: 6px 0 0 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3f4a44;
+}
+
 /* Kelas End */
 
 /* Footer Start */
@@ -737,16 +782,6 @@ h3.bundling {
 
   /* Kelas Start */
   .kelas-top {
-    text-align: center;
-  }
-
-  .kelas-container {
-    margin: 15px;
-  }
-  /* Kelas End */
-
-  /* Kelas Start */
-  .kelas-top {
     margin: 100px 15px;
   }
 
@@ -755,12 +790,19 @@ h3.bundling {
   }
 
   .kelas-container {
-    grid-template-columns: 1fr;
+    margin: 50px 15px;
   }
   h3.bundling {
     text-align: center;
   }
   /* Kelas End */
+
+  /* benefit start */
+  .benefit-section {
+    margin: 15px;
+  }
+
+  /* benefit end */
 
   /* Footer Start */
   .bottom-container {
@@ -795,5 +837,9 @@ h3.bundling {
 
   .fahmi .hero-text {
     text-align: center;
+  }
+
+  .kelas-container {
+    grid-template-columns: 1fr;
   }
 }
