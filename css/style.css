@@ -493,6 +493,50 @@ h3.bundling {
 
 /* Kelas End */
 
+/* About Start */
+.about-top {
+  margin: 100px;
+  margin-left: 120px;
+  margin-bottom: 1rem;
+}
+
+.about-top h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2.motto-visi {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about-container {
+  display: flex;
+  margin: 20px 100px;
+  gap: 2rem;
+}
+
+.about-container .motto {
+  flex: 1;
+}
+
+.motto h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-container .visi {
+  flex: 1;
+}
+
+.about-container div h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+/* About End */
+
 /* Footer Start */
 .bottom-container {
   display: grid;
@@ -805,6 +849,19 @@ h3.bundling {
   }
 
   /* benefit end */
+
+  /* About Start */
+  .about-top {
+    margin: 100px 15px;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 15px;
+  }
+  /* About End */
 
   /* Footer Start */
   .bottom-container {

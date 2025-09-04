@@ -11,5 +11,5 @@ function loadComponent(id, file, callback) {
 
 // Panggil komponen
 loadComponent("header", "components/header.html", initHeaderScripts);
-loadComponent("buttom-container", "components/bottom.html");
+loadComponent("bottom-container", "components/bottom.html");
 loadComponent("footer", "components/footer.html");
