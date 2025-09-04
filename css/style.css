@@ -5,7 +5,7 @@
   --gradient-color: linear-gradient(140deg, #d45428 25%, #b87012 95%);
   --text-color-1: #000;
   --text-color-2: #fff;
-  --shadow: rgba(0, 0, 0, 0.7);
+  --shadowbox: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -146,7 +146,7 @@ span:nth-child(3).slide {
 /* Nav Header */
 .header {
   background-color: var(--secondary-color);
-  box-shadow: 1px 1px 2px var(--shadow);
+  box-shadow: 1px 1px 2px var(--shadowbox);
   display: grid;
   position: fixed;
   top: 0;
@@ -171,7 +171,7 @@ span:nth-child(3).slide {
 
 .logo img {
   border-radius: 50%;
-  box-shadow: 1px 1px 2px var(--shadow);
+  box-shadow: 1px 1px 2px var(--shadowbox);
 }
 
 .logo h2 a {
@@ -242,7 +242,7 @@ span:nth-child(3).slide {
   background-position: center;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 5px 5px 7px var(--shadow);
+  box-shadow: 5px 5px 7px var(--shadowbox);
 }
 
 /* Stat Start */
@@ -316,7 +316,7 @@ h3.program-title {
 }
 
 .program-card {
-  box-shadow: 1px 1px 2px var(--shadow);
+  box-shadow: 1px 1px 2px var(--shadowbox);
   border-radius: 10px;
   margin: 0 1rem;
   outline-color: transparent;
@@ -406,7 +406,7 @@ h3.program-title {
 .kelas-card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 1px 1px 2px var(--shadow);
+  box-shadow: 1px 1px 2px var(--shadowbox);
 }
 
 .kelas-card img {
@@ -831,6 +831,7 @@ h2.motto-visi {
   /* Test Start */
   .test-container {
     justify-items: center;
+    margin: 15px;
   }
 
   .test-gallery {
