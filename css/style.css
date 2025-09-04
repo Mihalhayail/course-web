@@ -494,13 +494,22 @@ h3.bundling {
 /* Kelas End */
 
 /* About Start */
-.about-top {
-  margin: 100px;
-  margin-left: 120px;
-  margin-bottom: 1rem;
+.about-hero {
+  display: grid;
+  padding: 1rem;
+  margin: 0 70px;
+  margin-top: 120px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
 }
 
-.about-top h2 {
+.about-text p {
+  font-size: 0.9rem;
+}
+
+.about-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -695,6 +704,13 @@ h2.motto-visi {
   }
   /* Kelas End */
 
+  /* About Start */
+  .about-hero {
+    margin: 100px 15px;
+    align-items: center;
+  }
+  /* About End */
+
   /* Footer Start */
   .bottom-container {
     grid-template-columns: 1fr;
@@ -851,7 +867,12 @@ h2.motto-visi {
   /* benefit end */
 
   /* About Start */
-  .about-top {
+  .about-hero {
+    grid-template-columns: 1fr;
+    margin: 0 15px;
+  }
+
+  .about-text {
     margin: 100px 15px;
     text-align: center;
   }
