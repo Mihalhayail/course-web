@@ -544,7 +544,179 @@ h2.motto-visi {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
 /* About End */
+
+/* Milestone Start */
+.experience-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+h2.ex-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Timeline line */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #000, #aaa, transparent);
+}
+
+/* Card */
+.card {
+  background: var(--secondary-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px var(--shadowbox);
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -34px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #aaa;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.card .date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: start;
+  color: var(--primary-color);
+}
+.card .description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+/* Button */
+.btn-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.toggle-btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 2rem;
+}
+
+.info-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: var(--secondary-color);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadowbox);
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.detail {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.total {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Milestone End */
 
 /* Footer Start */
 .bottom-container {
