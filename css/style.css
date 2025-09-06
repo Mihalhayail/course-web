@@ -845,8 +845,8 @@ h2.ex-title {
 
   .header-auth {
     opacity: 0;
-    transform: translateX(-100%);
-    z-index: 99;
+    transform: translateY(-100%);
+    z-index: -99;
     position: absolute;
     top: 20px;
     transform: translate(0, -50%);
@@ -854,7 +854,8 @@ h2.ex-title {
 
   .header-auth.slide {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+    z-index: 99;
   }
 
   .hero-text > * {
@@ -933,16 +934,16 @@ h2.ex-title {
 
   .header-auth {
     opacity: 0;
-    transform: translateX(-100%);
-    z-index: 99;
+    transform: translateY(-100%);
+    z-index: -99;
     position: absolute;
     top: 30px;
-    transform: translate(0, -50%);
   }
 
   .header-auth.slide {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+    z-index: 99;
   }
 
   /* Nav end */
