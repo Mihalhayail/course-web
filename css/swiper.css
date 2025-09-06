@@ -151,3 +151,9 @@
     transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .story-carousel {
+    width: 200px;
+  }
+}
