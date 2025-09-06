@@ -1,6 +1,6 @@
 (function () {
   const deck = document.getElementById("deck");
-  const slides = Array.from(deck.querySelectorAll(".slide"));
+  const slides = Array.from(deck.querySelectorAll(".slider"));
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
   const dots = document.getElementById("dots");
