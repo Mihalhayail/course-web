@@ -1068,6 +1068,7 @@ h2.ex-title {
     justify-items: start;
     gap: 2rem;
   }
+
   /* Footer End */
 }
 
@@ -1096,4 +1097,15 @@ h2.ex-title {
   .kelas-container {
     grid-template-columns: 1fr;
   }
+}
+
+@media screen and (min-width: 768px) {
+  #chatbase-bubble-button {
+    bottom: 3rem !important;
+    right: 3rem !important;
+  }
+}
+
+#chatbase-bubble-button {
+  background-color: transparent !important;
 }
