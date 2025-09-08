@@ -1070,6 +1070,7 @@ h2.ex-title {
   .kelas-top {
     margin: 100px 15px;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   .kelas-top h2 {
@@ -1116,8 +1117,18 @@ h2.ex-title {
     margin-bottom: 2rem;
   }
 
+  .contact-text h2 {
+    font-size: 2rem;
+  }
+  .contact-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text p {
+    font-size: 0.9rem;
+  }
   .youtube iframe {
-    width: 380px;
+    width: 370px;
   }
   /* Contact End */
 
