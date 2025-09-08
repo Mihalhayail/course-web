@@ -928,12 +928,8 @@ h2.ex-title {
   /* Contact Start */
   .contact-container {
     grid-template-columns: 1fr;
-    margin: 100px 1rem;
   }
 
-  .icon-contain {
-    margin: 2rem 1rem;
-  }
   /* Contact End */
 
   /* Footer Start */
@@ -1114,9 +1110,12 @@ h2.ex-title {
   /* Contact Start */
 
   .contact-container {
+    margin: 100px 1rem;
     margin-bottom: 2rem;
   }
-
+  .icon-contain {
+    margin: 2rem 1rem;
+  }
   .contact-text h2 {
     font-size: 2rem;
   }
