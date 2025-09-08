@@ -718,6 +718,47 @@ h2.ex-title {
 
 /* Milestone End */
 
+/* Kontak Start */
+.contact-container {
+  margin: 100px 70px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.contact-text h2 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+
+.contact-text h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-contain {
+  margin: 2rem 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-icon a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.contact-icon a:hover {
+  color: var(--text-color-1);
+}
+
+.contact-icon a i {
+  margin-right: 1rem;
+}
+
+/* Kontak End */
+
 /* Footer Start */
 .bottom-container {
   display: grid;
@@ -883,6 +924,17 @@ h2.ex-title {
     align-items: center;
   }
   /* About End */
+
+  /* Contact Start */
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: 100px 1rem;
+  }
+
+  .icon-contain {
+    margin: 2rem 1rem;
+  }
+  /* Contact End */
 
   /* Footer Start */
   .bottom-container {
@@ -1058,6 +1110,17 @@ h2.ex-title {
   }
   /* About End */
 
+  /* Contact Start */
+
+  .contact-container {
+    margin-bottom: 2rem;
+  }
+
+  .youtube iframe {
+    width: 380px;
+  }
+  /* Contact End */
+
   /* Footer Start */
   .bottom-container {
     margin: 2rem;
@@ -1105,7 +1168,7 @@ h2.ex-title {
     right: 3rem !important;
   }
 }
-
 #chatbase-bubble-button {
   background-color: transparent !important;
+  bottom: 2rem;
 }
