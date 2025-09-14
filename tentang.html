@@ -39,6 +39,7 @@
     />
     <link rel="icon" href="image/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <title>About | Fahim Turast</title>
   </head>
   <body>
@@ -204,10 +205,98 @@
         </div>
       </div>
       <hr />
+      <!-- Testimoni Start -->
+      <section class="test-container">
+        <div class="test-title">
+          <h3>Testimoni</h3>
+          <p>
+            Alhamdulillah segala puji bagi Allah SWT, berikut sebagian kecil
+            dari setiap testimoni yang diberikan tahlib Fahim Turast adalah
+            murni tanpa kami minta. Mereka dengan tulus berbagi pengalaman
+            karena kepuasan dan manfaat yang mereka rasakan. Hal ini menjadi
+            bukti nyata kualitas dan kepercayaan yang terbangun dari dedikasi
+            kami dalam menghadirkan pembelajaran terbaik.
+          </p>
+        </div>
+        <div id="testimoni">
+          <div class="story-carousel" id="carousel">
+            <div class="frame" aria-hidden="true"></div>
+            <div class="deck" id="deck">
+              <figure class="slider" data-i="0">
+                <img alt="Story 1" src="image/testimoni/1.png" />
+              </figure>
+              <figure class="slider" data-i="1">
+                <img alt="Story 2" src="image/testimoni/2.png" />
+              </figure>
+              <figure class="slider" data-i="2">
+                <img alt="Story 3" src="image/testimoni/3.png" />
+              </figure>
+              <figure class="slider" data-i="3">
+                <img alt="Story 4" src="image/testimoni/4.png" />
+              </figure>
+              <figure class="slider" data-i="4">
+                <img alt="Story 5" src="image/testimoni/5.png" />
+              </figure>
+              <figure class="slider" data-i="5">
+                <img alt="Story 6" src="image/testimoni/6.png" />
+              </figure>
+            </div>
+
+            <div class="next-btn">
+              <button
+                class="btn"
+                id="prev"
+                aria-label="Sebelumnya"
+                title="Sebelumnya"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button
+                class="btn"
+                id="next"
+                aria-label="Berikutnya"
+                title="Berikutnya"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="dots"
+              id="dots"
+              role="tablist"
+              aria-label="Slide indicators"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimoni End-->
+      <hr />
+
       <aside id="bottom-container"></aside>
       <footer id="footer"></footer>
     </div>
     <script src="js/chatbot.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
     <script src="js/experience.js"></script>
     <script src="js/component.js"></script>

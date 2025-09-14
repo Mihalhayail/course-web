@@ -58,11 +58,11 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "stat-student") {
-          animateCounter("stat-student", 10, 1700, 10, 5, { suffix: "+" });
+          animateCounter("stat-student", 10, 3000, 10, 5, { suffix: "+" });
         }
 
         if (entry.target.id === "stat-course") {
-          animateCounter("stat-course", 1, 10, 1, 100, { suffix: " Online" });
+          animateCounter("stat-course", 1, 10, 1, 200, { suffix: " Online" });
         }
       }
     });
@@ -73,3 +73,25 @@ const observer = new IntersectionObserver(
 // Pasang observer ke elemen
 observer.observe(document.getElementById("stat-student"));
 observer.observe(document.getElementById("stat-course"));
+
+const programCard = document.getElementById("circleCard");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+// klik card -> tampilkan pop-up
+programCard.addEventListener("click", function (e) {
+  e.preventDefault();
+  popup.style.display = "flex";
+});
+
+// klik tombol close -> tutup pop-up
+closeBtn.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+
+// klik di luar konten -> tutup pop-up
+window.addEventListener("click", function (e) {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});

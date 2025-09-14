@@ -40,7 +40,6 @@
     />
     <link rel="icon" href="image/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
 
     <!-- Title -->
     <title>Fahim Turast</title>
@@ -51,21 +50,28 @@
 
       <section class="hero-container">
         <div class="hero-text">
-          <h2>Belajar ilmu alat dengan asik dan bertahap</h2>
+          <h2>Daurah dan Talaqqi Ilmu Alat berseri</h2>
           <p class="hero-desc">
-            Fahim Turast adalah platform edukasi yang fokus dalam bidang Ulum
-            Lughah (Ilmu Bahasa) dan Ulum 'Aqliyah (Logika dan Pemikiran).
+            Fahim Turast adalah platform pendidikan yang fokus pada ulumul
+            &apos;arabiah dan &apos; aqliyah. Dengan pembelajaran bertahap
+            (tadarruj) dari mubtadi (dasar) hingga muntahi (lanjutan).
           </p>
-          <p>• 🧑‍🏫 Pengajar yang kompeten dan berpengalaman</p>
-          <p>• 📺 Tampilan vidio dengan visual yang menarik dan audio jernih</p>
-          <p>• 📝 Metode mudah dipahami dan pembelajaran bertahap</p>
+          <p>• 📚 Daurah/Talaqqi Ilmu Alat Berseri</p>
+          <p>• 📍 Offline dan Online (E-Course)</p>
+          <p>• 📝 Bertahap, Sistematis dan Mendalam.</p>
+          <p>• ✅ Cocok untuk semua kalangan</p>
         </div>
         <div class="hero-image">
           <img src="image/mubtadi.png" alt="Hero Image" />
         </div>
       </section>
       <br />
-
+      <marquee class="marquee" behavior="scroll" direction="left">
+        <strong>
+          Mulai dari; Nahwu, Sharf, Balaghah, Mantiq, Wadha &apos;arabiah,
+          Isytiqaq, Adabul Bahst Wal Munadzharah, dan Ilmu Maqashid lainnya.
+        </strong>
+      </marquee>
       <div class="stat-section">
         <div class="stat-box start">
           <div id="stat-student" class="stat-number"></div>
@@ -140,14 +146,14 @@
       <hr />
       <!-- Program Start -->
       <h3 class="program-title">Program</h3>
-      <div class="program-container">
+      <div class="program-container" id="programs">
         <div class="program-card">
           <a href="kelas.html">
             <div class="program-icon">
               <i class="fa-solid fa-person-chalkboard fa-2x"></i>
             </div>
             <div class="program-desc">
-              <h4>Daurah / Talaqqi</h4>
+              <h4>Daurah Offline</h4>
               <p>
                 Program pembelajaran intensif berbasis kitab turats yang
                 berlangsung dalam jangka waktu tertentu.
@@ -161,7 +167,7 @@
               <i class="fa-solid fa-chalkboard fa-2x"></i>
             </div>
             <div class="program-desc">
-              <h4>E-Course</h4>
+              <h4>Daurah Online</h4>
               <p>
                 Kelas online berbasis video yang dapat diakses kapan saja,
                 memungkinkan peserta belajar dengan fleksibel.
@@ -185,97 +191,118 @@
             </div>
           </a>
         </div>
+        <div class="program-card" id="circleCard">
+          <a href="#">
+            <div class="program-icon">
+              <i class="fa-solid fa-user-group fa-2x"></i>
+            </div>
+            <div class="program-desc">
+              <h4>Circle Belajar</h4>
+              <p>
+                MaFahim Circle hadir sebagai wadah belajar, berdiskusi, dan
+                bertumbuh bersama dalam lingkaran ilmu.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pop-up -->
+      <div class="pop-up" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h3>📢 MaFahim Circle</h3>
+          <p>
+            Misi Wujudkan 1000 Rumah Mudzakarah <br />
+            bagi para penuntut ilmu🌻
+          </p>
+          <div class="btn-circle">
+            <a
+              class="button btn-primary"
+              href="https://forms.gle/H9e9LgBPE9NieLne9"
+              >Daftar Kontributor</a
+            >
+            <a
+              class="button btn-secondary"
+              href="https://forms.gle/tGQed98HPGeo5xvb8"
+              >Daftar Anggota</a
+            >
+          </div>
+        </div>
       </div>
 
       <!-- Program End -->
       <br />
       <br />
       <hr />
-      <!-- Testimoni Start -->
-      <section class="test-container">
-        <div class="test-title">
-          <h3>Testimoni</h3>
-          <p>
-            Alhamdulillah segala puji bagi Allah SWT, berikut sebagian kecil
-            dari setiap testimoni yang diberikan tahlib Fahim Turast adalah
-            murni tanpa kami minta. Mereka dengan tulus berbagi pengalaman
-            karena kepuasan dan manfaat yang mereka rasakan. Hal ini menjadi
-            bukti nyata kualitas dan kepercayaan yang terbangun dari dedikasi
-            kami dalam menghadirkan pembelajaran terbaik.
-          </p>
-        </div>
-        <div id="testimoni">
-          <div class="story-carousel" id="carousel">
-            <div class="frame" aria-hidden="true"></div>
-            <div class="deck" id="deck">
-              <figure class="slider" data-i="0">
-                <img alt="Story 1" src="image/testimoni/1.png" />
-              </figure>
-              <figure class="slider" data-i="1">
-                <img alt="Story 2" src="image/testimoni/2.png" />
-              </figure>
-              <figure class="slider" data-i="2">
-                <img alt="Story 3" src="image/testimoni/3.png" />
-              </figure>
-              <figure class="slider" data-i="3">
-                <img alt="Story 4" src="image/testimoni/4.png" />
-              </figure>
-              <figure class="slider" data-i="4">
-                <img alt="Story 5" src="image/testimoni/5.png" />
-              </figure>
-              <figure class="slider" data-i="5">
-                <img alt="Story 6" src="image/testimoni/6.png" />
-              </figure>
+      <!-- Benefit Start -->
+      <div class="benefit-section">
+        <h3 class="benefit-title">Benefit</h3>
+        <div class="benefit-grid">
+          <div class="benefit-item">
+            <i class="fas fa-book-open icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Ilmu yang Terjamin</strong>
+              <p>
+                Mendapatkan ilmu dan pengetahuan yang dapat dipertanggung
+                jawabkan
+              </p>
             </div>
-
-            <div class="next-btn">
-              <button
-                class="btn"
-                id="prev"
-                aria-label="Sebelumnya"
-                title="Sebelumnya"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="15 18 9 12 15 6" />
-                </svg>
-              </button>
-              <button
-                class="btn"
-                id="next"
-                aria-label="Berikutnya"
-                title="Berikutnya"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </button>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-chalkboard-teacher icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Pengajar yang Kompeten dan Berpengalaman</strong>
+              <p>
+                Dibimbing oleh pemateri yang telah mengajar puluhan kitab turast
+                dan modern.
+              </p>
             </div>
-
-            <div
-              class="dots"
-              id="dots"
-              role="tablist"
-              aria-label="Slide indicators"
-            ></div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-lightbulb icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Pemahaman Mendalam</strong>
+              <p>
+                Pengajar akan menyoroti poin-poin penting dalam kitab turast
+                yang akan mempermudah kitab-kitab lanjutan atau masalah yang
+                berkaitan dengan ilmu lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-language icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Penguasaan Ilmu Alat</strong>
+              <p>
+                Merasakan bagaimana ilmu alat benar-benar menjadi dasar penting
+                dalam berbagai cabang ilmu Islam.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-comments icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Bebas dan Gratis Konsultasi</strong>
+              <p>
+                Thalib dapat bertanya langsung kepada pengajar melalui WhatsApp,
+                setelah belajar untuk pemahaman mendalam.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-tv icon" aria-hidden="true"></i>
+            <div class="text">
+              <strong>Fasilitas Modern</strong>
+              <p>
+                Menggunakan Smart TV untuk pembelajaran offline dan akses video
+                pembelajaran berkualitas tinggi melalui YouTube.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- Testimoni End-->
+      </div>
+      <!-- Benefit End -->
       <hr />
       <!-- Buttom  -->
       <aside id="bottom-container"></aside>
@@ -283,9 +310,7 @@
 
       <footer id="footer"></footer>
     </div>
-
     <script src="js/chatbot.js"></script>
-    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
     <script src="js/component.js "></script>
   </body>
