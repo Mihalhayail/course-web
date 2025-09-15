@@ -13,6 +13,14 @@ function initHeaderScripts() {
     spans.forEach((span) => span.classList.toggle("slide"));
   });
 
+  // Tambahkan event click untuk hamburger menu
+  document.querySelectorAll(".kelas").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      el.classList.toggle("open");
+      e.stopPropagation();
+    });
+  });
+
   // Header hide on scroll
   let lastScrollTop = 0;
   window.addEventListener("scroll", function () {

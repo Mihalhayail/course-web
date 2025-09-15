@@ -1,7 +1,6 @@
 :root {
   --primary-color: #d45428;
   --secondary-color: #fff8cc;
-  --thirdty-color: #f4e9ad;
   --gradient-color: linear-gradient(140deg, #d45428 25%, #b87012 95%);
   --text-color-1: #000;
   --text-color-2: #fff;
@@ -201,12 +200,12 @@ span:nth-child(3).slide {
 .header-list a {
   padding: 0 0.8rem;
   font-size: 0.9rem;
+  font-weight: 500;
   color: var(--text-color-1);
   transition: all 0.3s ease-in-out;
 }
 
 .header-list a:hover {
-  font-size: 1rem;
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -214,6 +213,7 @@ span:nth-child(3).slide {
 .header-list .kelas {
   position: relative;
 }
+
 /* dropdown disembunyikan dulu */
 .dropdown {
   display: none;
@@ -225,8 +225,8 @@ span:nth-child(3).slide {
   list-style: none;
   min-width: 200px;
   border-radius: 8px;
-  padding: 2rem 1rem;
-  z-index: 999999;
+  padding: 1rem;
+  z-index: 9999;
 }
 
 .dropdown li a {
@@ -239,7 +239,7 @@ span:nth-child(3).slide {
 }
 
 /* tampilkan dropdown saat hover */
-.kelas:hover .dropdown {
+.kelas.open .dropdown {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -948,9 +948,6 @@ h2.ex-title {
 /* Responsive Break Points */
 @media screen and (max-width: 1024px) {
   /* Nav */
-  .header-list {
-    display: inline;
-  }
 
   .header-toggle {
     display: flex;
@@ -960,7 +957,7 @@ h2.ex-title {
     z-index: 2000;
   }
 
-  .header ul {
+  .header-list {
     display: flex;
     position: absolute;
     top: 0;
@@ -978,7 +975,7 @@ h2.ex-title {
     transition: all 1s;
   }
 
-  .header ul.slide {
+  .header-list.slide {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1058,23 +1055,17 @@ h2.ex-title {
     z-index: 200;
   }
 
-  .header ul {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    background-color: var(--secondary-color);
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 20;
-    transform: translateY(-100%);
-    opacity: 0;
+  .header-list {
+    justify-content: center;
+    align-items: start;
     transition: all 1s;
   }
 
-  .header ul.slide {
+  .header-list > li {
+    margin: 2.3rem 2rem;
+  }
+
+  .header-list.slide {
     opacity: 1;
     transform: translateX(0);
   }
@@ -1084,13 +1075,29 @@ h2.ex-title {
     transform: translateY(-100%);
     z-index: -99;
     position: absolute;
-    top: 30px;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .header-auth::after {
+    content: "";
+    display: block;
+    width: 85vw;
+    height: 1px;
+    background: var(--primary-color);
+    margin: 1rem 0;
   }
 
   .header-auth.slide {
     opacity: 1;
     transform: translateY(0);
     z-index: 99;
+  }
+
+  /* tampilkan dropdown saat hover */
+  .kelas.open .dropdown {
+    left: 100%;
+    opacity: 1;
   }
 
   /* Nav end */
