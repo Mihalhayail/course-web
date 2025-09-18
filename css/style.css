@@ -1310,3 +1310,6 @@ h2.ex-title {
     grid-template-columns: 1fr;
   }
 }
+button#chatbase-bubble-button {
+  margin: 1rem;
+}
