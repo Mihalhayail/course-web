@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #d45428;
+  --primary-color: #a57918;
   --secondary-color: #fff8cc;
-  --gradient-color: linear-gradient(140deg, #d45428 25%, #b87012 95%);
+  --gradient-color: linear-gradient(140deg, #a57918 25%, #7a5402 95%);
   --text-color-1: #000;
   --text-color-2: #fff;
   --shadowbox: rgba(0, 0, 0, 0.7);
@@ -259,8 +259,8 @@ span:nth-child(3).slide {
   align-content: center;
 }
 
-.hero-text > * {
-  margin-right: 3rem;
+.hero-container .hero-text {
+  margin-right: 5rem;
 }
 
 .hero-text h2 {
@@ -312,6 +312,20 @@ span:nth-child(3).slide {
 }
 /* Stat End */
 
+/* Ilmu Alat Start */
+.ilmu-alat {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ilmu-alat img {
+  width: 85vw;
+  border-radius: 10px;
+}
+/* Ilmu Alat End */
+
 /* Prakata Start */
 
 .prakata {
@@ -330,13 +344,6 @@ span:nth-child(3).slide {
   margin-bottom: 2rem;
 }
 
-.fahmi .hero-image {
-  justify-self: start;
-}
-
-.fahmi .hero-text {
-  text-align: end;
-}
 /* Prakata End */
 
 /* Program Start */
@@ -415,6 +422,7 @@ h3.program-title {
 
 /* Konten Pop-up */
 .popup-content {
+  position: relative;
   background: #fff;
   padding: 2rem 1rem;
   border-radius: 10px;
@@ -434,8 +442,8 @@ h3.program-title {
 /* Tombol close */
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10 px;
+  right: 15px;
   font-size: 28px;
   cursor: pointer;
   color: var(--text-color-1);
@@ -1001,6 +1009,12 @@ h2.ex-title {
 
   /* Nav End */
 
+  /* Hero Start */
+  .hero-container .hero-text {
+    margin-right: 1rem;
+  }
+  /* Hero Start */
+
   /* Program Start */
   .program-container {
     grid-template-columns: 1fr 1fr;
@@ -1051,7 +1065,7 @@ h2.ex-title {
     display: flex;
     position: fixed;
     right: 20px;
-    top: 30px;
+    top: 20px;
     z-index: 200;
   }
 
@@ -1105,7 +1119,11 @@ h2.ex-title {
   .hero-container {
     grid-template-columns: 1fr;
     margin: 0 15px;
-    margin-top: 100px;
+    margin-top: 70px;
+  }
+
+  .hero-container .hero-text {
+    margin-right: 0;
   }
 
   .hero-text h2 {
@@ -1291,15 +1309,4 @@ h2.ex-title {
   .kelas-container {
     grid-template-columns: 1fr;
   }
-}
-
-@media screen and (min-width: 768px) {
-  #chatbase-bubble-button {
-    bottom: 3rem !important;
-    right: 3rem !important;
-  }
-}
-#chatbase-bubble-button {
-  background-color: #fff !important;
-  bottom: 2rem;
 }
