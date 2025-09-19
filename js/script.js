@@ -66,11 +66,11 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "stat-student") {
-          animateCounter("stat-student", 10, 3000, 10, 5, { suffix: "+" });
+          animateCounter("stat-student", 10, 3000, 10, 1, { suffix: "+" });
         }
 
         if (entry.target.id === "stat-course") {
-          animateCounter("stat-course", 1, 10, 1, 200, { suffix: " Online" });
+          animateCounter("stat-course", 1, 10, 1, 300, { suffix: " Online" });
         }
       }
     });
@@ -102,4 +102,37 @@ window.addEventListener("click", function (e) {
   if (e.target === popup) {
     popup.style.display = "none";
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const faqContainer = document.getElementById("faq-container");
+
+  fetch("faq.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((item) => {
+        const faqItem = document.createElement("div");
+        faqItem.classList.add("faq-item");
+
+        const question = document.createElement("div");
+        question.classList.add("faq-question");
+        question.innerHTML = `
+          <span>${item.question}</span>
+          <span class="arrow">▼</span>
+        `;
+
+        const answer = document.createElement("div");
+        answer.classList.add("faq-answer");
+        answer.innerHTML = `<p>${item.answer.replace(/\n/g, "<br>")}</p>`;
+
+        faqItem.appendChild(question);
+        faqItem.appendChild(answer);
+        faqContainer.appendChild(faqItem);
+
+        question.addEventListener("click", () => {
+          faqItem.classList.toggle("active");
+        });
+      });
+    })
+    .catch((err) => console.error("Gagal memuat FAQ:", err));
 });
