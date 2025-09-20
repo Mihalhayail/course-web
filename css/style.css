@@ -408,20 +408,20 @@ h3.program-title {
 
 /* FAQ Start */
 .faq-section {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 90vw;
+  margin: 3rem auto;
   padding: 0 20px;
 }
 
 .faq-section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 30px;
 }
 
 .faq-item {
-  background: rgb(247, 233, 140);
+  background: rgb(254, 242, 165);
   margin-bottom: 10px;
   border-radius: 12px;
   overflow: hidden;
@@ -1165,8 +1165,16 @@ h2.ex-title {
     left: 100%;
     opacity: 1;
   }
-
   /* Nav end */
+
+  /* Faq Start */
+
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+  /* Faq End */
+
+  /* Hero Start */
 
   .hero-container {
     grid-template-columns: 1fr;
@@ -1283,10 +1291,11 @@ h2.ex-title {
   .about-hero {
     grid-template-columns: 1fr;
     margin: 0 15px;
+    padding: 0;
   }
 
   .about-text {
-    margin: 100px 15px;
+    margin: 100px 10px;
     text-align: center;
   }
 
