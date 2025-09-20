@@ -454,7 +454,7 @@ h3.program-title {
 }
 
 .faq-item.active .arrow {
-  transform: rotate(180deg);
+  transform: rotate(120deg);
 }
 /* FAQ End */
 
