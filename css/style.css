@@ -6,6 +6,11 @@
   --text-color-2: #fff;
   --shadowbox: rgba(0, 0, 0, 0.7);
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/poppins.woff2") format("woff2");
+  font-display: swap;
+}
 
 * {
   margin: 0;
