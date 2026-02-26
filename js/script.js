@@ -41,7 +41,7 @@ function animateCounter(
   target,
   step,
   speed,
-  { prefix = "", suffix = "" } = {}
+  { prefix = "", suffix = "" } = {},
 ) {
   const el = document.getElementById(elementId);
   let angka = start;
@@ -66,16 +66,16 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "stat-student") {
-          animateCounter("stat-student", 10, 3000, 10, 1, { suffix: "+" });
+          animateCounter("stat-student", 10, 4000, 10, 1, { suffix: "+" });
         }
 
         if (entry.target.id === "stat-course") {
-          animateCounter("stat-course", 1, 10, 1, 300, { suffix: " Online" });
+          animateCounter("stat-course", 1, 13, 1, 300, { suffix: " Online" });
         }
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 },
 );
 
 // Pasang observer ke elemen
