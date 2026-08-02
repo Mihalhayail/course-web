@@ -1,6 +1,5 @@
 :root {
-
-  --primary-color: #bc9c74; /* Warna latte/warm beige yang modern */
+  --primary-color: #b78a2d; /* Warna latte/warm beige yang modern */
   --secondary-color: #fdfbf7; /* Warna cream lembut yang cerah (Alabaster) */
   --gradient-color: linear-gradient(
     140deg,
@@ -13,7 +12,7 @@
     41,
     37,
     36,
-    0.06
+    0.8
   ); /* Bayangan modern berbasis warna tanah yang sangat halus */
 }
 
@@ -447,7 +446,7 @@ h3.program-title {
 
 .faq-question {
   padding: 15px 20px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -583,7 +582,7 @@ h3.program-title {
 .kelas-card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 1px 1px 2px var(--shadowbox);
+  box-shadow: 2px 2px 3px var(--shadowbox);
 }
 
 .kelas-card img {
@@ -1192,7 +1191,7 @@ h2.ex-title {
   /* Faq Start */
 
   .faq-section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   /* Faq End */
 

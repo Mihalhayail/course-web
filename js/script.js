@@ -66,11 +66,11 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "stat-student") {
-          animateCounter("stat-student", 10, 4000, 10, 1, { suffix: "+" });
+          animateCounter("stat-student", 10, 5500, 10, 1, { suffix: "+" });
         }
 
         if (entry.target.id === "stat-course") {
-          animateCounter("stat-course", 1, 13, 1, 300, { suffix: " Online" });
+          animateCounter("stat-course", 1, 16, 1, 150, { suffix: " Online" });
         }
       }
     });
